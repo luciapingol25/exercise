@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cm to feet converter</title>
+</head>
+<body>
+ 		<input type="number" id="cmInput"><br>
+      <button onclick="convertCmToFeet()">Convert</button><br>
+    <p><span id="answer"></span></p>
+
+    <script>
+        function convertCmToFeet() {
+            var cm = document.getElementById("cmInput").value;
+            var feet = cm / 30.48;
+            document.getElementById("answer").innerHTML = feet.toFixed(2);
+        }
+    </script>
+    </body>
+    </html>
+
